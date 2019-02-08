@@ -74,7 +74,12 @@ public class SpeedReader {
         //sleep and clear
         Thread.sleep(wpm);
         panel.clear();
-      } // while     
+      } // while   
+      
+      //display final wordCount and sentenceCount processed by the WordGenerator source
+      g.drawString("Word Count:" + source.getWordCount(), 20, 100);
+      g.drawString("Sentence Count:" + source.getSentenceCount(), 20, 200);
+      
     } // else
   }// main
 }// SpeedReader Class
